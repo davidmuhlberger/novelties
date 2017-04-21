@@ -1,0 +1,5 @@
+<%= simple_form_for @product do |f| %>
+        <%= f.input :name, label:"Which product?" %>
+        <%= f.input :url, label:"Which URL?" %>
+        <%= f.button :submit, "Valider", class: "btn btn-primary" %>
+<% end %>
