@@ -9,5 +9,5 @@
 Product.destroy_all
 
 Product.create!(name: "Kuodz", url: "http://getkudoz.com", tagline:"Tinder for job searchs")
-Product.create!(name: "uSlide", url: "http://uslide.io", tagline:"Youtube sucks for education")
+Product.create!(name: "uSlide", url: "http://youslide.io", tagline:"Youtube sucks for education")
 Product.create!(name: "Medpics", url: "http://medpics.io", tagline:"Share your diagnosis")
