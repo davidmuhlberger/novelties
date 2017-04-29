@@ -39,14 +39,16 @@ before_action :find_product, only: [:show, :edit, :update, :destroy]
   end
 
   def destroy
-    @product.destroy
+    if current_user.id = @product.user.id
+      @product.destroy
+    end
     redirect_to products_path
   end
 
   private
 
   def product_params
-    params.require(:product).permit(:name, :url, :tagline, :category)
+    params.require(:product).permit(:name, :url, :tagline, :category, :photo)
   end
 
   def find_product

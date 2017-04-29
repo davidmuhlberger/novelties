@@ -3,5 +3,6 @@
         <%= f.input :url, label:"Which URL?" %>
         <%= f.input :tagline, label:"Which tagline?" %>
         <%= f.input :category, collection: ["tech", "education", "design"], prompt:"which category?" %>
+        <%= f.input :photo, as: :attachinary %>
         <%= f.button :submit, "Valider", class: "btn btn-primary" %>
 <% end %>
