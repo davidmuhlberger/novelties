@@ -37,6 +37,15 @@
   font-size: 13px;
   line-height: 20px;
 }
+
+a.product-upvote {
+  color: black;
+}
+
+.product-upvoted, a.product-upvote.product-upvoted {
+  color: #5898f1;
+}
+
 .product-count {
   margin: 2px 0 0;
 }
@@ -50,6 +59,10 @@
   border-bottom: 9px solid black;
   border-radius: 2px;
   margin: auto;
+}
+
+.product-upvoted .product-arrow {
+  border-bottom-color: #5898f1;
 }
 
 /* Controls design */
@@ -89,3 +102,7 @@
 // .product:hover .product-upvote { transform: scale(1.2) }
 .product:hover .product-controls-hidden a { color: #E6E6E6 }
 .product-upvote:hover .product-arrow { border-bottom: 9px solid #5898f1 }
+
+a.product-upvote:hover {
+  text-decoration: none;
+}
